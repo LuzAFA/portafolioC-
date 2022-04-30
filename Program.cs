@@ -6,11 +6,8 @@ namespace portafolioC_
     {
         static void Main(string[] args)
         {
-            //Clase22042022.mayorDeDosNumeros();
-            //Clase22042022.mayorDeDosNumerosYSuSigno();
-            //Clase22042022.menuCalculadora();
-            //Clase22042022.juegoCraps();
-            Retos.reto1();
+            Clase29042022.presupuesto();
+            //Retos.reto1();
         }
     }
 }

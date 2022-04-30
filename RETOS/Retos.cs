@@ -41,5 +41,7 @@ namespace portafolioC_
             gCentigrados = (gFahrenheit - 32)/1.8;
             Console.WriteLine($"{gFahrenheit} grados Fahrenheit son equivalentes a {gCentigrados} grados Centígrados");
         }
+
+        
     }
 }
