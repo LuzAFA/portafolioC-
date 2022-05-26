@@ -31,25 +31,25 @@ namespace portafolioC_
         /* RETO 2
         El centro de salud Famisalud, aplica vacunas a los bebes menores de un año y la dosis a aplicar
         depende del peso y la edad del bebé según la siguiente fórmula:
-        dosisvacuna = ((pesobebe ] 10)/(mesesbebe x 10)) * 8
+        dosisVacuna = ((pesoBebe ] 10)/(mesesBebe x 10)) * 8
         Realice un programa en java que le permita a la enfermera, determinar con facilidad la
         dosis de la vacuna que se debe aplicar a un bebé.
         */
 
         public static void reto2()
         {
-            double dosisvacuna,
-                pesobebe,
-                mesesbebe;
+            double dosisVacuna,
+                pesoBebe,
+                mesesBebe;
 
             Console.WriteLine("Digite el peso del bebe");
-            pesobebe = double.Parse(Console.ReadLine());
+            pesoBebe = double.Parse(Console.ReadLine());
 
             Console.WriteLine("Digite la edad del bebe en meses");
-            mesesbebe = double.Parse(Console.ReadLine());
+            mesesBebe = double.Parse(Console.ReadLine());
 
-            dosisvacuna = ((pesobebe + 10) / (mesesbebe * 10)) * 8;
-            Console.WriteLine($"La dosis que se le debe administrar al bebe es  {dosisvacuna}");
+            dosisVacuna = ((pesoBebe + 10) / (mesesBebe * 10)) * 8;
+            Console.WriteLine($"La dosis que se le debe administrar al bebe es  {dosisVacuna}");
         }
     }
 }

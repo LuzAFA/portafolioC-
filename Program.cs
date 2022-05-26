@@ -11,14 +11,14 @@ namespace portafolioC_
             //Clase22042022.mayorDeDosNumerosYSuSigno();
             //Clase22042022.menuCalculadora();
             //Clase22042022.juegoCraps();
-            Retos1y2.reto1();
-            Retos1y2.reto2();
-            Retos3y4.reto3();
-            Retos3y4.reto4();
-            Retos5y6.reto5();
-            Retos5y6.reto6();
-            Retos7y8.reto7();
-            Retos7y8.reto8();
+            //Retos1y2.reto1();
+            //Retos1y2.reto2();7
+            //Retos3_4y5.reto3();
+            //Retos3_4y5.reto4();
+            //Retos3_4y5.reto5();
+            Retos6y7.reto6();
+            //Retos7y8.reto7();
+            //Retos7y8.reto8();
 
         }
     }

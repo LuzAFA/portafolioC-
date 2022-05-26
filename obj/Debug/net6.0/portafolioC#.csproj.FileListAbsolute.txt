@@ -13,3 +13,18 @@ C:\Users\AdminSena\Documents\uwu\portafolioC#\portafolioC#\obj\Debug\net6.0\refi
 C:\Users\AdminSena\Documents\uwu\portafolioC#\portafolioC#\obj\Debug\net6.0\portafolioC#.pdb
 C:\Users\AdminSena\Documents\uwu\portafolioC#\portafolioC#\obj\Debug\net6.0\portafolioC#.genruntimeconfig.cache
 C:\Users\AdminSena\Documents\uwu\portafolioC#\portafolioC#\obj\Debug\net6.0\ref\portafolioC#.dll
+C:\Users\Luz Fernandez\Documents\GitHub\portafolioC-\obj\Debug\net6.0\portafolioC#.csproj.AssemblyReference.cache
+C:\Users\Luz Fernandez\Documents\GitHub\portafolioC-\obj\Debug\net6.0\portafolioC#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Luz Fernandez\Documents\GitHub\portafolioC-\obj\Debug\net6.0\portafolioC#.AssemblyInfoInputs.cache
+C:\Users\Luz Fernandez\Documents\GitHub\portafolioC-\obj\Debug\net6.0\portafolioC#.AssemblyInfo.cs
+C:\Users\Luz Fernandez\Documents\GitHub\portafolioC-\obj\Debug\net6.0\portafolioC#.csproj.CoreCompileInputs.cache
+C:\Users\Luz Fernandez\Documents\GitHub\portafolioC-\obj\Debug\net6.0\portafolioC#.dll
+C:\Users\Luz Fernandez\Documents\GitHub\portafolioC-\obj\Debug\net6.0\ref\portafolioC#.dll
+C:\Users\Luz Fernandez\Documents\GitHub\portafolioC-\obj\Debug\net6.0\portafolioC#.pdb
+C:\Users\Luz Fernandez\Documents\GitHub\portafolioC-\bin\Debug\net6.0\portafolioC#.exe
+C:\Users\Luz Fernandez\Documents\GitHub\portafolioC-\bin\Debug\net6.0\portafolioC#.deps.json
+C:\Users\Luz Fernandez\Documents\GitHub\portafolioC-\bin\Debug\net6.0\portafolioC#.runtimeconfig.json
+C:\Users\Luz Fernandez\Documents\GitHub\portafolioC-\bin\Debug\net6.0\portafolioC#.dll
+C:\Users\Luz Fernandez\Documents\GitHub\portafolioC-\bin\Debug\net6.0\ref\portafolioC#.dll
+C:\Users\Luz Fernandez\Documents\GitHub\portafolioC-\bin\Debug\net6.0\portafolioC#.pdb
+C:\Users\Luz Fernandez\Documents\GitHub\portafolioC-\obj\Debug\net6.0\portafolioC#.genruntimeconfig.cache

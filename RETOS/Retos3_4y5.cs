@@ -16,15 +16,15 @@ namespace portafolioC_
         public static void reto3()
         {
             Random random = new Random();
-            int moneda = random.Next(0, 1); // 0 cara 1 sello
+            int moneda = random.Next(0, 2); // 0 cara 1 sello
             int elecion;
 
             Console.WriteLine("Digite Su elecion, 1. cara o 2. sello ");
             elecion = int.Parse(Console.ReadLine()) - 1;
 
             Console.WriteLine("Realizando lanzamiento en 3... 2... 1... ");
-            string res = moneda == 0 ? "Cara" : "Sello";
-            Console.WriteLine($"La moneda ha caido en {res}");
+            string resultado = moneda == 0 ? "Cara" : "Sello";
+            Console.WriteLine($"La moneda ha caido en {resultado}");
 
             if (moneda == elecion)
                 Console.WriteLine("Ganaste");
@@ -43,8 +43,8 @@ namespace portafolioC_
         public static void reto4()
         {
             Random random = new Random();
-            int elecionMaquina = random.Next(0, 2);
-            string resMaquina =
+            int elecionMaquina = random.Next(0, 3); // 0 piedra, 1 papel, 2 tijera
+            string resultadoMaquina =
                 elecionMaquina == 0
                     ? "piedra"
                     : elecionMaquina == 1
@@ -52,7 +52,7 @@ namespace portafolioC_
                         : "tijera";
 
             Console.WriteLine(
-                $"Digite Su elecion, 1. piedra, 2. papel o 3. tijera // {resMaquina}"
+                $"Digite Su elecion, 1. piedra, 2. papel o 3. tijera"
             );
             int elecionUsuario = int.Parse(Console.ReadLine()) - 1;
             string resUsuario =
@@ -63,75 +63,53 @@ namespace portafolioC_
                         : "tijera";
 
             Console.WriteLine("1, 2, 3... Piedra papel o tijera... ");
-            Console.WriteLine($"La maquina ha sacado {resMaquina}");
+            Console.WriteLine($"La maquina ha sacado {resultadoMaquina}");
 
+            Console.WriteLine($"usuario: {resUsuario} vs maquina: {resultadoMaquina}");
             if (elecionUsuario == elecionMaquina)
-                Console.WriteLine($"usuario: {resUsuario} vs maquina: {resMaquina} ES EMPATE");
+                Console.WriteLine($"ES EMPATE");
             else
-                switch (elecionMaquina)
+            {
+                switch (elecionUsuario) // 0 piedra, 1 papel, 2 tijera
                 {
                     case 0: //piedra
-                        if (elecionUsuario == 2)
-                        {
-                            Console.WriteLine($"usuario: {resUsuario} vs maquina: {resMaquina}");
-                            Console.WriteLine($"usuario PIERDE, La piedra aplasta la tijera");
-                        }
+                        if (elecionMaquina == 1)
+                            Console.WriteLine($"usuario PIERDE, El papel envuelve a la piedra");
                         else
-                        {
-                            Console.WriteLine($"usuario: {resUsuario} vs maquina: {resMaquina}");
-                            Console.WriteLine($"usuario GANA, El papel envuelve a la piedra");
-                        }
+                            Console.WriteLine($"usuario GANA, La piedra aplasta la tijera");
                         break;
 
                     case 1: // papel
-                        if (elecionUsuario == 0)
-                        {
-                            Console.WriteLine($"usuario: {resUsuario} vs maquina: {resMaquina}");
+                        if (elecionMaquina == 0)
                             Console.WriteLine($"usuario GANA, El papel envuelve a la piedra");
-                        }
                         else
-                        {
-                            Console.WriteLine($"usuario: {resUsuario} vs maquina: {resMaquina}");
-                            Console.WriteLine($"usuario PIERDE, El papes es cortado por la tijera");
-                        }
+                            Console.WriteLine($"usuario PIERDE, El papel es cortado por la tijera");
                         break;
+
                     case 2: //tijera
-                        if (elecionUsuario == 1)
-                        {
-                            Console.WriteLine($"usuario: {resUsuario} vs maquina: {resMaquina}");
-                            Console.WriteLine($"usuario PIERDE, El papes es cortado por la tijera");
-                        }
+                        if (elecionMaquina == 1)
+                            Console.WriteLine($"usuario GANA, El papel es cortado por la tijera");
                         else
-                        {
-                            Console.WriteLine($"usuario: {resUsuario} vs maquina: {resMaquina}");
                             Console.WriteLine($"usuario PIERDE, La piedra aplasta la tijera");
-                        }
                         break;
                 }
-
-            Console.WriteLine($"La moneda ha caido en {resMaquina}");
-
-            if (elecionMaquina == elecionUsuario)
-                Console.WriteLine("Ganaste");
-            else
-                Console.WriteLine("Perdiste, mejor suerte la proxima");
+            }
         }
 
         /* RETO 5
-    En Supermercados Noé estamos de aniversario y te obsequiamos
-    un descuento en el valor de tu compra, si esta es mayor a 50.000
-    y dependiendo de tu suerte:
+        En Supermercados Noé estamos de aniversario y te obsequiamos
+        un descuento en el valor de tu compra, si esta es mayor a 50.000
+        y dependiendo de tu suerte:
 
-    Si sacas la bolita roja obtienes 10% en el valor de tu compra
-    Si sacas la bolita azul obtienes un 30% en el valor de tu compra
-    Si sacas la bolita amarilla obtienes un 50% en el valor de tu compra
-    Si sacas la bolita blanca te llevas tu compra gratis
+        Si sacas la bolita roja obtienes 10% en el valor de tu compra
+        Si sacas la bolita azul obtienes un 30% en el valor de tu compra
+        Si sacas la bolita amarilla obtienes un 50% en el valor de tu compra
+        Si sacas la bolita blanca te llevas tu compra gratis
 
-    Permítale a un cliente del supermercado Noé saber si su compra
-    ha sido beneficiada con su promoción de aniversario,
-    indique acorde a la bolita obtenida de forma aleatoria qué valor
-    de descuento ha ganado y cual sería su valor final a pagar.
-
+        Permítale a un cliente del supermercado Noé saber si su compra
+        ha sido beneficiada con su promoción de aniversario,
+        indique acorde a la bolita obtenida de forma aleatoria qué valor
+        de descuento ha ganado y cual sería su valor final a pagar.
     */
 
         public static void reto5()
