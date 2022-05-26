@@ -2,42 +2,59 @@ namespace portafolioC_
 {
     internal class RetoMaquinaExpendedora
     {
-        public static void RetoMaquinaExpendedora()
+        public static void retoMaquinaExpendedora()
         {
-            Console.WriteLine("Cuantas personas van a competir?");
-            int cantidadCompetidores = int.Parse(Console.ReadLine());
-            String[] nombres = new String[cantidadCompetidores];
-            float[] tiempos = new float[cantidadCompetidores];
-            for (int i = 0; i < nombres.Length; i++)
             {
-                Console.WriteLine($" Digite el nombre del competidor {i} ");
-                nombres[i] = Console.ReadLine();
-            }
+                int fila;
+                int columna;
+                bool continuar;
 
-            for (int i = 0; i < tiempos.Length; i++)
-            {
-                Console.WriteLine($" Digite el tiempo del competidor {i} ");
-                tiempos[i] = float.Parse(Console.ReadLine());
-            }
+                string[,] productos = new string[4, 4];
+                int[,] precios = new int[4, 4];
 
-            Console.WriteLine("");
-            for (int i = 0; i < nombres.Length; i++)
-            {
-                Console.WriteLine($" Competidor {nombres[i]} con tiempo {tiempos[i]} ");
-            }
-            int PosicionGanador = 0;
-            for (int i = 0; i < tiempos.Length - 1; i++)
-            {
-                if (tiempos[i] < tiempos[i + 1])
+                do
                 {
-                    PosicionGanador = i;
-                }
-                else
+                    Console.WriteLine(
+                        "Ingrese la informacion del producto a agregar"
+                    );
+
+                    Console.WriteLine("ingrese la fila donde ubicara el producto?");
+                    fila = int.Parse(Console.ReadLine());
+
+                    Console.WriteLine("ingrese la columna donde ubicara el producto?");
+                    columna = int.Parse(Console.ReadLine());
+
+                    Console.WriteLine(
+                        $"Qué producto vas a ingresar en la fila {fila} con columna {columna}?"
+                    );
+                    productos[fila, columna] = Console.ReadLine();
+
+                    Console.WriteLine(
+                        $"Qué precio tiene el producto que ingresaste en la fila {fila} con columna {columna}?"
+                    );
+                    precios[fila, columna] = int.Parse(Console.ReadLine());
+
+                    Console.WriteLine("Desea ingresar otro producto? 1. SI 2. NO");
+                    continuar = int.Parse(Console.ReadLine()) == 1;
+                } while (continuar == 1);
+
+                for (int f = 0; f < 4; f++)
                 {
-                    PosicionGanador = i + 1;
+                    for (int c = 0; c < 4; c++)
+                    {
+                        Console.Write($"{productos[f, c]}  -  ");
+                    }
+
+                    Console.WriteLine("");
+
+                    for (int c = 0; c < 4; c++)
+                    {
+                        Console.Write($"{precios[f, c]}  -  ");
+                    }
+
+                    Console.WriteLine("");
                 }
             }
-            Console.WriteLine($" ..... EL GANADOR ES {nombres[PosicionGanador]} .....  ");
         }
     }
 }

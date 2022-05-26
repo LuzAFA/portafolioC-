@@ -41,13 +41,9 @@ namespace portafolioC_
             for (int i = 0; i < tiempos.Length - 1; i++)
             {
                 if (tiempos[i] < tiempos[i + 1])
-                {
                     PosicionGanador = i;
-                }
                 else
-                {
                     PosicionGanador = i + 1;
-                }
             }
             Console.WriteLine($" ..... EL GANADOR ES {nombres[PosicionGanador]} .....  ");
         }
