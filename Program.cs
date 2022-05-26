@@ -16,10 +16,11 @@ namespace portafolioC_
             //Retos3_4y5.reto3();
             //Retos3_4y5.reto4();
             //Retos3_4y5.reto5();
-            Retos6y7.reto6();
-            //Retos7y8.reto7();
-            //Retos7y8.reto8();
-
+            //Retos6y7.reto6();
+            //Retos6y7.reto7();
+            //Retos8.reto8();
+            RetoMaquinaExpendedora.retoMaquinaExpendedora();
+            
         }
     }
 }
